@@ -6,7 +6,16 @@
 */
 
 function findLargestElement(numbers) {
-    
+    let max=numbers[0];
+    for(let i=0;i<numbers.length;i++){
+        if(numbers[i]>max){
+            max=numbers[i];
+        }
+    }
+    return max;
+    // numbers=numbers.sort((a,b)=>a-b);
+    // return numbers[numbers.length-1];
 }
 
 module.exports = findLargestElement;
+// npx jest harkirat_assignments/01-js/tests/findLargestElement.test.js
